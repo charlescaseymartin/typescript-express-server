@@ -9,7 +9,7 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Welcome to Express & TypeScript Server');
 });
 
-const server = app.listen(port, () => {
+app.listen(port, () => {
   console.log(`Server is listening on port: ${port}...`);
   console.log('Press Ctrl+C to quit.');
 });
